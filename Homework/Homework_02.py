@@ -1,7 +1,6 @@
 height = float(input('Введите ваш рост: '))
 weight = int(input('Ведите ваш вес: '))
 
-
 bmi = weight/height**2
 print('Ваш индекс массы тела: ', round(bmi))
 
