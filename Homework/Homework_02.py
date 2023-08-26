@@ -1,40 +1,19 @@
-
-# 1.
-# Выводить
-# результат
-# в
-# виде
-# шкалы:
-# Пример: Если
-# результат
-# 30
-# 20 = = = = = = |= = = = = = = = = = = =50
-#
-# Если
-# 40
-# 20 == == == == == == |= == == =50
-
-# hight = float(input('Введите рост: '))
-# weight = int(input('Ведите вес: '))
-
-# hight = 1.7
-# weight = 80
-#
-# imb = weight/hight**2
-# print('Ваш индекс массы тела: ', imb)
-#
-# min_scale = 20
-# max_scale = 50
-#
-# len_1 = imb - min_scale
-# len_2 = max_scale - imb
-#
-# print(round(len_1))
-# print(round(len_2))
+height = float(input('Введите ваш рост: '))
+weight = int(input('Ведите ваш вес: '))
 
 
-b = ['20', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=',
-     '=', '=', '=', '=', '=', '=', '=', '50']
-c = b[3] = '|'
-print(c)
-print(''.join(b))
+bmi = weight/height**2
+print('Ваш индекс массы тела: ', round(bmi))
+
+start_scale = 16
+end_scale = 50
+
+len_1 = round(bmi - start_scale)
+len_2 = round(end_scale - bmi)
+
+scale_logic = '16' + '=' * int(len_1 - 1) + '|' + '=' * int(len_2 - 1) + '50'
+
+print(scale_logic)
+
+
+
