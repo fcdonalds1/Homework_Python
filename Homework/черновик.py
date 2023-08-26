@@ -1,5 +1,8 @@
-hight = float(input('Введите рост: '))
-weight = int(input('Ведите вес: '))
+#hight = float(input('Введите рост: '))
+#weight = int(input('Ведите вес: '))
+
+hight = 1.7
+weight = 60
 
 imb = weight/hight**2
 print('Ваш индекс массы тела: ', imb)
@@ -13,10 +16,10 @@ len_2 = max_scale - imb
 
 
 
-b = [min_scale, '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=',
-     '=', '=', '=', '=', '=', '=', '=', max_scale]
-
+b = 'min_scale============================max_scale'
 print(b)
+
+
 
 
 
