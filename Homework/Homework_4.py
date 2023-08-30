@@ -47,9 +47,6 @@ c = int(input())
 if a > 5 or b == 7 and c == 7:
     print('Петя')
 
-print()
-print()
-print()
 
 
 
